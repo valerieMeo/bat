@@ -27,7 +27,7 @@ public class NouvelleServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Nouvelle page sur le projet : ").append(request.getContextPath());
+		response.getWriter().append("Nouvelle page sur le projet de valerie: ").append(request.getContextPath());
 	}
 
 	/**
