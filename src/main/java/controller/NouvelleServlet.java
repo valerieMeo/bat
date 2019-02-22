@@ -7,19 +7,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import data.Bateau;
-
 /**
- * Servlet implementation class BateauServlet
+ * Servlet implementation class NouvelleServlet
  */
-@WebServlet("/bateau")
-public class BateauServlet extends HttpServlet {
+@WebServlet("/new")
+public class NouvelleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BateauServlet() {
+    public NouvelleServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,12 +26,8 @@ public class BateauServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Bateau bateau = new Bateau("Queen's Mary");
-		response.getWriter()
-
-			.append("Bateau de Black bird: ")
-
-			.append(bateau.toString());
+		// TODO Auto-generated method stub
+		response.getWriter().append("Nouvelle page sur le projet de valerie: ").append(request.getContextPath());
 	}
 
 	/**
